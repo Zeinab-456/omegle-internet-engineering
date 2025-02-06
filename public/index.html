@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omegle Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Welcome to the Chat Platform</h1>
+    </header>
+    <main>
+        <div class="question">
+            <p>How would you like to chat?</p>
+            <button id="textChat">Text Chat</button>
+            <button id="audioChat">Audio Chat</button>
+            <button id="videoChat">Video Chat</button>
+        </div>
+    </main>
+    <script>
+        document.getElementById("textChat").addEventListener("click", () => {
+            window.location.href = "chat.html?type=text";
+        });
+        document.getElementById("audioChat").addEventListener("click", () => {
+            window.location.href = "chat.html?type=audio";
+        });
+        document.getElementById("videoChat").addEventListener("click", () => {
+            window.location.href = "chat.html?type=video";
+        });
+    </script>
+</body>
+</html>
+
